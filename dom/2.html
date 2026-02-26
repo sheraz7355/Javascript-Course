@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+  
+    
+</body>
+<script>
+    // we will learn about the dom manipulator
+    const div = document.createElement('div');
+    div.className = 'main';
+    div.id = 'mainId';
+    div.setAttribute('main-div', 'mainDiv');
+    // the use cases of setAttribute is that we can use it to add custom attributes to the dom elements and we can use it to add data attributes to the dom elements which can be used to store extra information about the element and we can use it to add aria attributes to the dom elements which can be used to improve the accessibility of the web page
+    div.innerText = 'DOM Manipulator is a tool that allows us to manipulate the DOM.';
+    document.body.appendChild(div);
+</script>
+</html>

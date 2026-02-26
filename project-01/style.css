@@ -1,0 +1,37 @@
+.colors{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.buttons{
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button{
+    width: 70px;           /* Added width/height so you can see them */
+    height: 70px;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}   
+#yellow{
+    background-color: yellow;
+}

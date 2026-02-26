@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="main">
+        <h1 class="heading" id="head">DOM Manipulator</h1>
+        <p class="para">DOM Manipulator is a tool that allows us to manipulate the DOM.</p>
+      </div>
+      <script>
+        // we will learn about the dom manipulator
+        document.querySelector('.heading').innerText = 'DOM Manipulator.';
+        // dom manipulator is a tool that allows us to manipulate the dom
+        document.querySelector('#head').style.color = 'red';
+        // we can use the dom manipulator to change the style of the dom
+        // we can use the dom manipulator to add or remove elements from the dom
+        document.querySelector('.main').innerHTML += '<p class="para">We can use the DOM manipulator to add or remove elements from the DOM.</p>'; // here we are adding a new paragraph to the main div using the innerHTML property of the DOM manipulator but with same class name as the previous paragraph so that we can easily select it and manipulate it later on
+        // but if i add colors to .para class then it will change the color of both the paragraphs because they have the same class name so we can use the dom manipulator to add or remove classes from the dom to avoid this problem
+        document.querySelectorAll('.para').forEach(function(para) {
+            para.style.color = 'green';
+        });
+        // we can use the dom manipulator to add or remove classes from the dom
+        document.querySelector('.para').classList.add('new-class');
+        // we can use the dom manipulator to add or remove attributes from the dom
+        // we can use the dom manipulator to add or remove event listeners from the dom
+        // we can use the dom manipulator to traverse the dom           
+        </script>
+</body>
+</html>
