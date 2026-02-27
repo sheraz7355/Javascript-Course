@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: darkorange;
+    color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    max-width: 484px;
+    margin: 0 auto;
+}
+#guessButton{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: solid 0.5px white;
+    border-radius: 5px;
+}
+.below{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
