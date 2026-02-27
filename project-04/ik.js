@@ -32,8 +32,8 @@ form.addEventListener('submit', function (e){
     }
     // attempts check
     if(!attemptsCheck()){
-        result.innerHTML = `${attempts} attempts are left Game-Over!`
-        gameOver(input);
+        result.innerHTML = `${attempts} attempts are left Game-Over! The number was ${target}`;
+        gameOver();
         return;
     }else{
         attempts--;
@@ -70,7 +70,9 @@ function guessCheck(input){
 
 
 function gameOver(){
-    document.querySelector('#inputValue').setAttribute('disabled', '');
+    const input = document.querySelector('#inputValue');
+    input.setAttribute('disabled', '');
+    input.value = '';
     document.querySelector('.below').appendChild(startButton);
     startButton.addEventListener('click', function(){
         resetGame();
